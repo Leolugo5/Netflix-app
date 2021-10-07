@@ -1,0 +1,556 @@
+.register {
+    overflow: hidden;
+    background-color: #333;
+
+    .register-wrapper {
+        height: 75vh;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.7)),
+            url("https://cdn.hipwallpaper.com/i/98/21/dUyCkp.jpg");
+        .top {
+            height: 4rem;
+            padding: 3rem 3.1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .right {
+                .logo {
+                    height: 2.5rem;
+                }
+            }
+            .left {
+                display: flex;
+                justify-content: space-between;
+                margin-right: 2rem;
+                .lan-icon {
+                    color: white;
+                    transform: scale(0.75);
+                }
+                .lan-wrapper {
+                    border: solid 1px white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 5px;
+                    margin-right: 2rem;
+                    .select-lang {
+                        color: white;
+                        border: none;
+                        background-color: transparent;
+                    }
+                }
+                .router-link {
+                    .login-button {
+                        background: red;
+                        border: none;
+                        padding: 0.4rem 0.9rem;
+                        font-size: 16px;
+                        font-weight: 500;
+                        cursor: pointer;
+                        color: rgb(223, 222, 222);
+                        border-radius: 3px;
+                    }
+                }
+            }
+        }
+
+        .container {
+            width: 100%;
+            height: 85%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .container-wrapper {
+                color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 80%;
+                margin-bottom: 4rem;
+
+                h1 {
+                    font-size: 3.1rem;
+                }
+                .h1-title-below {
+                    font-size: 3.1rem;
+                    margin-bottom: 1.8rem;
+                }
+                .h2-h2 {
+                    margin-bottom: 2rem;
+                }
+                p {
+                    font-size: 1.15rem;
+                }
+                .input {
+                    width: 80%;
+                    background-color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    height: 3.2rem;
+                    margin-top: 1.5rem;
+                    border-radius: 5px;
+                    .inp {
+                        flex: 9;
+                        height: 100%;
+                        border: none;
+                        padding: 0 0.9rem;
+                        color: rgb(102, 102, 102);
+                    }
+                    .r-btn-container {
+                        background-color: red;
+                        flex: 3;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        justify-content: space-around;
+                        padding: 0 10px;
+
+                        .register-btn {
+                            border: none;
+                            cursor: pointer;
+                            color: whitesmoke;
+                            background-color: transparent;
+                            font-size: 1.6rem;
+                        }
+                    }
+                }
+                .input-pass {
+                    width: 80%;
+                    background-color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    height: 3.2rem;
+                    margin-top: 1.5rem;
+                    border-radius: 5px;
+                    .inp {
+                        flex: 9;
+                        height: 100%;
+                        border: none;
+                        padding: 0 0.9rem;
+                        color: rgb(102, 102, 102);
+                    }
+
+                    .r-btn-container {
+                        color: white;
+                        flex: 3;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        justify-content: space-around;
+                        text-decoration: none;
+                        background-color: red;
+                        padding: 0 10px;
+                        
+                        .register-btn {
+                            border: none;
+                            cursor: pointer;
+                            color: whitesmoke;
+                            background-color: transparent;
+                            font-size: 1.6rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .bottom {
+        overflow: hidden;
+
+        .add-tv {
+            margin-top: 0.5rem;
+            background-color: black;
+            color: white;
+            padding: 2.8rem;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .add-tv-wrapper {
+                max-width: 1100px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+
+                .add-tv-text-content {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    justify-content: space-evenly;
+                    padding-left: 3rem;
+                    margin: 0 15px;
+
+                    .add-tv-title {
+                        margin-bottom: 1.2rem;
+                        font-size: 3.125rem;
+                    }
+                    .add-tv-content-h2 {
+                        font-weight: 400;
+                    }
+                }
+
+                .add-tv-media-container {
+                    z-index: 95;
+                    position: relative;
+                    flex: 1;
+
+                    .add-tv-photo {
+                        position: relative;
+                        height: 300px;
+                        top: 0;
+                        left: 0;
+                        z-index: 99;
+                    }
+
+                    .add-tv-video {
+                        height: 180px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        mix-blend-mode: 200px;
+                        margin-left: 3.1rem;
+                        margin-top: 3.8rem;
+                    }
+                }
+            }
+        }
+        .add-download {
+            margin-top: 0.5rem;
+            background-color: black;
+            color: white;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 78px 75px;
+
+            .add-download-wrapper {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .add-download-wrapper-2 {
+                    max-width: 1100px;
+                    display: flex;
+                    flex-direction: row-reverse;
+                    justify-content: center;
+                    align-items: center;
+                    flex-wrap: wrap;
+
+                    .add-download-text-content {
+                        flex: 1;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        justify-content: space-evenly;
+
+                        margin: 0 15px;
+                        padding-left: 3rem;
+                        height: 70%;
+
+                        .add-download-title {
+                            margin-bottom: 1.2rem;
+                            font-size: 3.125rem;
+                        }
+                        .add-download-content-h2 {
+                            font-weight: 400;
+                        }
+                    }
+
+                    .add-download-media-container {
+                        width: 48%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        .add-download-media-container-2 {
+                            height: 100%;
+
+                            .add-download-photo-container {
+                                height: 100%;
+
+                                .add-download-photo {
+                                    max-height: 350px;
+                                    position: relative;
+                                    top: 0;
+                                    left: 0;
+                                    margin-top: -2rem;
+                                }
+                            }
+
+                            .add-download-media-animation {
+                                border: 2px solid rgba(255, 255, 255, 0.25);
+                                background-color: #000;
+                                border-radius: 0.75rem;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+                                padding: 0.5rem 0.75rem;
+                                position: relative;
+                                margin: auto;
+                                margin-top: -7rem;
+                                z-index: 99;
+                                width: fit-content;
+
+                                .add-d-animation-photo {
+                                    height: 4rem;
+                                }
+
+                                .add-download-media-text-container {
+                                    flex: 3;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-around;
+
+                                    .add-download-sm-container-title {
+                                        font-size: 1rem;
+                                        margin-top: 0.3rem;
+                                        padding: 0 1rem;
+                                    }
+                                    .add-downloading-download-indicator {
+                                        padding: 0 1rem;
+                                        color: #0071eb;
+                                        font-size: 0.9rem;
+                                        font-weight: 500;
+                                        margin-top: -1rem;
+                                    }
+                                }
+
+                                .add-download-sm-container-animation {
+                                    flex: 0.8;
+                                    height: 100%;
+                                    width: 90%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    position: relative;
+
+                                    .add-download-animation-gift {
+                                        height: 3.75rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .add-watch {
+            margin-top: 0.5rem;
+            background-color: black;
+            color: white;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 78px 75px;
+
+            .main-wrapper {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .wrapper {
+                    height: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    flex-direction: row;
+                    justify-content: center;
+                    max-width: 1100px;
+
+                    .description-content {
+                        flex: 1;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        justify-content: space-between;
+
+                        margin: 0 15px;
+                        padding-left: 3rem;
+                        height: 100%;
+
+                        .description-title {
+                            font-size: 3.125rem;
+                        }
+                        .description-subtitle {
+                            font-size: 1.625rem;
+                            font-weight: 400;
+                            padding: 1rem 0;
+                        }
+                    }
+
+                    .media-content {
+                        flex: 1;
+
+                        .media-tv-video {
+                            z-index: 95;
+                            position: relative;
+                            flex: 1;
+
+                            .media-photo {
+                                position: relative;
+                                height: 300px;
+                                top: 0;
+                                left: 0;
+                                z-index: 99;
+                            }
+
+                            .media-video {
+                                height: 140px;
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                mix-blend-mode: 200px;
+                                margin-left: 4.8rem;
+                                margin-top: 2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .for-kids {
+            margin-top: 0.5rem;
+            background-color: black;
+            color: white;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 78px 75px;
+
+            .main-wrapper {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                max-width: 1100px;
+
+                .wrapper {
+                    height: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    flex-direction: row-reverse;
+                    justify-content: center;
+                    max-width: 1100px;
+
+                    .description-content {
+                        flex: 2;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        justify-content: space-between;
+
+                        margin: 0 15px;
+                        height: 100%;
+
+                        .description-title {
+                            font-size: 3.125rem;
+                        }
+                        .description-subtitle {
+                            font-size: 1.625rem;
+                            font-weight: 400;
+                            padding: 1rem 0;
+                        }
+                    }
+
+                    .media-content {
+                        flex: 1;
+                        .media-container {
+                            .media-photo {
+                                height: 280px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .faq {
+            margin-top: 0.5rem;
+            background-color: black;
+            color: white;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 78px 75px;
+
+            .main-wrapper {
+                .wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    .faq-title {
+                        font-size: 3.125rem;
+                        line-height: 1.1;
+                        margin-bottom: 0.5rem;
+                    }
+
+                    .main-q-container {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        justify-content: space-evenly;
+                        width: 100%;
+                        margin: 2rem auto;
+
+                        .q-container {
+                            margin: 0.3rem 0;
+                            position: relative;
+                            width: 80%;
+                            max-width: 1100px;
+                            border: 0;
+
+                            .container-title {
+                                cursor: pointer;
+                                padding: 0.8rem 2rem;
+                                background-color: #303030;
+                                font-size: 1.3rem;
+                                margin-bottom: 1px;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+
+                                .title {
+                                    font-weight: 400;
+                                }
+                            }
+                            .container-body {
+                                display: flex;
+                                padding: 0.6rem 0.8rem;
+                                background-color: #303030;
+                                span {
+                                    display: inline-block;
+                                    padding: 1.2em;
+                                    font-weight: 400;
+                                    font-size: 1.625rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

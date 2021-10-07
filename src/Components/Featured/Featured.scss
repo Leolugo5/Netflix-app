@@ -1,0 +1,12 @@
+.category {
+    position: absolute;
+    top: 5rem;
+    left: 3rem;
+    select {
+        margin: .8rem;
+        background-color: #0b0b0b;
+        border: solid 1px white;
+        color: whitesmoke;
+        padding: .3rem .4rem;
+    }
+}

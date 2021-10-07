@@ -1,0 +1,143 @@
+.main-container {
+    overflow: hidden;
+    .main-wrapper {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.7)),
+            url("https://assets.nflxext.com/ffe/siteui/vlv3/9b3267c9-5086-4550-92f1-eddc22a1f78e/fb8e12d6-117a-489b-9dd2-3063da93c5e5/MX-es-20211004-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        .top {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 1.5rem;
+            .logo-container {
+                .logo {
+                    height: 2.5rem;
+                }
+            }
+        }
+
+        .login-form {
+            height: auto;
+            min-width: 460px;
+            padding: 4rem;
+            background-color: rgba(0,0,0,.75);
+
+            .form-wrapper {
+                height: auto;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                max-height: 600px;
+
+                .main-form {
+                    height: auto;
+                    width: 100%;
+                    min-width: 320px;
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 2rem;
+
+                    .title {
+                        font-size: 2.5em;
+                        margin-bottom: 2rem;
+                        color: #fff;
+                    }
+
+                    .input-container {
+                        display: flex;
+                        flex-direction: column;
+
+
+                        .inp {
+                            border: none;
+                            height: 3rem;
+                            padding: 0.4rem 1rem;
+                            margin-bottom: 0.8rem;
+                            border-radius: 5px;
+                            color: rgb(211, 211, 211);
+                            background: #333;   
+                        }
+                        .password {
+                            margin-bottom: 2rem;
+                        }
+                    }
+                    .router-link{
+                        .send-btn {
+                            width: 100%;
+                            border: none;
+                            background-color: #e50914;
+                            color: whitesmoke;
+                            height: 3rem;
+                            border-radius: 5px;
+                            margin-bottom: 0.7rem;
+                        }
+                    }
+
+                    .remember-help-container {
+                        color: #b3b3b3;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        font-weight: 400;
+                        font-size: 17px;
+                        .remember-container {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: center;
+                            .save-user {
+                                position: relative;
+                                top: 0;
+                                left: 0;
+                                height: 1.3rem;
+                                width: 1.3rem;
+                                margin-right: 0.3rem;
+                                color: #333;
+                                cursor: pointer;
+                            }
+                        }
+                        
+                        .help {
+                            text-decoration: none;
+                            color: #b3b3b3;
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+
+                .register-link {
+                    color: #737373;
+                    font-weight: 400;
+                    font-size: 1rem;
+
+                    .register-title {
+                        font-weight: 400;
+                        font-size: 1.5rem;
+                    }
+                    .router-link {
+                        text-decoration: none;
+
+                        .register-link {
+                            text-decoration: none;
+                            color: rgba(255, 255, 255, 0.863);
+                            letter-spacing: 1px;
+    
+    
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
