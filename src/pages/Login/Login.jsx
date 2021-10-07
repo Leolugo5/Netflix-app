@@ -36,14 +36,14 @@ const Login = () => {
                                         Remember Me
                                     </span>
                                 </div>
-                                <a href="" className="help"> Need help? </a>
+                                <a href="./" className="help"> Need help? </a>
                             </div>
                         </form>
 
                         <div className="register-link">
                             <h2 className="register-title">New to Netflix? </h2>
                             <Link to='/register' className="router-link">
-                                <a href="" className="register-link">Sign up now.</a>
+                                <a href="./" className="register-link">Sign up now.</a>
                             </Link>
                         </div>
 

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Language, ArrowForwardIos, Close } from '@mui/icons-material'
+import { Language, ArrowForwardIos } from '@mui/icons-material'
 import { useState, useRef } from 'react'
 import styled from 'styled-components'
 import './Register.scss'
@@ -21,6 +21,7 @@ const Register = () => {
 
 
     const [password, setPassword] = useState("")
+    console.log(password)
     const passwordRef = useRef()
     const handleFinish = () => {
         setPassword(passwordRef.current.value)
