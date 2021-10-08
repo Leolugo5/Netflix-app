@@ -18,8 +18,6 @@ const HomePage = () => {
             <List />
             <List />
             <List />
-            <List />
-            <List />
         </Container>
     )
 }

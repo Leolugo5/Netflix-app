@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import styled from 'styled-components'
+import { movies } from '../MoviesData'
+
 
 
 const Container = styled.div`
@@ -101,7 +103,7 @@ const Featured = ({ type }) => {
                     soluta laborum!
                 </Span>
                 <ButtonsContainer>
-                    <Link to='/waching' className="router-link" style={LinkStyle}>
+                    <Link to='/waching' className="router-link" style={LinkStyle} movie={movies[5].trailer} >
                         <Buttons className="play" >
                             <PlayArrowIcon />
                             <SmallSpan>Play</SmallSpan>

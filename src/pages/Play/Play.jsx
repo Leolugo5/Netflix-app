@@ -2,7 +2,8 @@ import './Play.scss'
 import ArrowBackOutlined from '@mui/icons-material/ArrowBackOutlined';
 import { Link } from 'react-router-dom'
 
-const play = () => {
+const play = ({movie}) => {
+    const file = {movie}
     return (
         <div className="watch">
             <div className="back">
@@ -12,7 +13,7 @@ const play = () => {
                 </Link>
             </div>
             <video
-                className="video" autoPlay progress controls src="https://www.pexels.com/video/5192103/download/?search_query=&tracking_id=c6k6hxjkszr" />
+                className="video" autoPlay progress controls src={file} />
         </div>
     )
 }
