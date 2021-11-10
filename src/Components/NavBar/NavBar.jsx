@@ -5,6 +5,8 @@ import SearchIcon from '@mui/icons-material/Search';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import { useState } from 'react';
+import { FeaturedType } from '../Featured/FeaturedState';
+import { useContext } from 'react';
 
 const Container = styled.div`
     color: whitesmoke;
@@ -59,7 +61,7 @@ const NavBar = () => {
         return () => (window.onscroll = null)
     }
 
-
+    const { setType } = useContext(FeaturedType)
 
     return (
         <Container className={scroll ? "scrolled" : "navbar"}>
@@ -68,8 +70,8 @@ const NavBar = () => {
                     <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-Netflix_2015_logo.svg.png" />
                     <div className="to-wach" >
                         <Span>Home</Span>
-                        <Span>Series</Span>
-                        <Span>Movies</Span>
+                        <Span onClick={() => setType(true)}>Series</Span>
+                        <Span onClick={() => setType(false)}>Movies</Span>
                         <Span>New and Popular</Span>
                         <Span>My List</Span>
                     </div>

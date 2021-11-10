@@ -2,11 +2,34 @@
     position: absolute;
     top: 5rem;
     left: 3rem;
+    background: rgba(12, 12, 12, 0.842);
+    backdrop-filter: blur(20px);
+    box-shadow: 1px 0px 35px -1px rgba(0, 0, 0, 0.8);
+
+    .type {
+        padding: 0.4rem 0.6rem;
+    }
     select {
-        margin: .8rem;
+        margin: 0.8rem;
         background-color: #0b0b0b;
         border: solid 1px white;
         color: whitesmoke;
-        padding: .3rem .4rem;
+        padding: 0.3rem 0.4rem;
+    }
+}
+.c {
+    .i {
+        .b-c {
+            .router-link {
+                .play:hover {
+                    background-color: #0b0b0b;
+                    color: whitesmoke;
+                }
+            }
+            .more:hover {
+                background-color: white;
+                color: #0b0b0b;
+            }
+        }
     }
 }

@@ -4,6 +4,8 @@ import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import styled from 'styled-components'
 import { movies } from '../MoviesData'
+import { useContext } from 'react';
+import { FeaturedType } from './FeaturedState';
 
 
 
@@ -25,6 +27,10 @@ const Info = styled.div`
     color: whitesmoke;
     display: flex;
     flex-direction: column;
+    padding: 2rem;
+    background: rgba( 4, 4, 4, 0.6 );
+    backdrop-filter: blur( 20px );
+    box-shadow: 1px 0px 35px -1px rgba( 0, 0, 0, .8 );
 `
 const Span = styled.span`
     margin: 1.7rem 0;
@@ -49,26 +55,28 @@ const Buttons = styled.button`
         background-color: #636161;
         color: whitesmoke;
     }
-    &:hover {
-        transform: scale(1.01);
-    }
 `
 const SmallSpan = styled.span`
     margin: 0.3rem;
 `
 const LinkStyle = {
-    color:"black",
+    color: "black",
     textDecoration: "none"
 }
 
 
 
-const Featured = ({ type }) => {
+const Featured = ({ data }) => {
+    const file = data
+    const movie = file[Math.floor(Math.random() * file.length)]
+
+    const {type} = useContext(FeaturedType)
+
     return (
-        <Container>
+        <Container className="c">
             {type && (
                 <div className="category">
-                    <span>{type === "movie" ? "Movies" : "Series"}</span>
+                    <span className="type">{type === true ? "Series" : "Movies"}</span>
                     <select name="genere" id="genere">
                         <option>Genere</option>
                         <option value="adventure">Adventure</option>
@@ -87,22 +95,13 @@ const Featured = ({ type }) => {
                     </select>
                 </div>
             )}
-            <Image src="https://images.pexels.com/photos/3626733/pexels-photo-3626733.jpeg?cs=srgb&dl=pexels-daria-shevtsova-3626733.jpg&fm=jpg" />
-            <Info>
-                <img src="https://occ-0-1432-1433.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABUZdeG1DrMstq-YKHZ-dA-cx2uQN_YbCYx7RABDk0y7F8ZK6nzgCz4bp5qJVgMizPbVpIvXrd4xMBQAuNe0xmuW2WjoeGMDn1cFO.webp?r=df1" alt="" />
-
+            <Image src={movie.photoCover} />
+            <Info className="i">
+                <h1 className="name"> {movie.name} </h1>
                 <Span>
-                    Lorem ipsum dolor sit, amet consectetur
-                    adipisicing elit. Minima cumque ex dolorem,
-                    rerum itaque culpa dicta iure similique eaque,
-                    doloribus repellat! Ab veniam voluptas
-                    enim qui delectus quidem. Magnam, tempore
-                    animi magni porro quasi eaque unde quis
-                    voluptatem vitae minus doloribus eveniet
-                    voluptates voluptatibus dicta ratione, dolore velit
-                    soluta laborum!
+                    {movie.description}
                 </Span>
-                <ButtonsContainer>
+                <ButtonsContainer className="b-c">
                     <Link to='/waching' className="router-link" style={LinkStyle} movie={movies[5].trailer} >
                         <Buttons className="play" >
                             <PlayArrowIcon />

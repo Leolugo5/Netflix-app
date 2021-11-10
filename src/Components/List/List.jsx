@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import { KeyboardArrowLeft, KeyboardArrowRight } from '@mui/icons-material'
 import ListItem from '../ListItem/ListItem'
 import { useRef, useState } from 'react'
-import { movies } from '../MoviesData'
 
 
 const Container = styled.div`
@@ -24,7 +23,7 @@ const ListItemContainer = styled.div`
 `
 
 
-const List = () => {
+const List = ({title, movies}) => {
 
     const [isMoved, setIsMoved] = useState(false);
     const [slideNumber, setSlideNumber] = useState(0);
@@ -45,16 +44,10 @@ const List = () => {
     };
     return (
         <Container className="main">
-            <ListCategoryName className="list-category-name" > Continue to watch </ListCategoryName>
+            <ListCategoryName className="list-category-name" > {title} </ListCategoryName>
             <Wrapper className="wrapper" >
                 <KeyboardArrowLeft className="arrow aleft" onClick={() => handleClick("left")} style={{ display: !isMoved && "none" }} />
                 <ListItemContainer className="list-item-container" ref={listRef} >
-                    {movies.map((movie) => {
-                        return <ListItem movie={movie} id={movie.id} />
-                    })},
-                    {movies.map((movie) => {
-                        return <ListItem movie={movie} id={movie.id} />
-                    })},
                     {movies.map((movie) => {
                         return <ListItem movie={movie} id={movie.id} />
                     })}

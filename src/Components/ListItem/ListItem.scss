@@ -1,6 +1,7 @@
 .list-item {
     overflow: hidden;
     cursor: pointer;
+    z-index: 2;
     .pic {
         width: 100%;
         height: 100%;
@@ -20,8 +21,8 @@
     }
     &:hover {
         background-color: #0b0b0b;
-        width: 24.3rem;
-        height: 22rem;
+        width: 25.3rem;
+        height: 27rem;
         box-shadow: 0px 0px 25px 2px rgba(255, 255, 255, 0.11);
         -webkit-box-shadow: 0px 0px 25px 2px rgba(255, 255, 255, 0.11);
         -moz-box-shadow: 0px 0px 25px 2px rgba(255, 255, 255, 0.11);
@@ -29,7 +30,7 @@
         top: -11rem;
         border-radius: 5px;
         text-align: left;
-        z-index: 200;
+        z-index: 999;
         .pic {
             height: 8.8rem;
         }
@@ -38,6 +39,7 @@
             flex-direction: column;
             padding: 15px;
             justify-content: space-evenly;
+            height: min-content;
 
             .icons {
                 display: flex;
@@ -55,7 +57,7 @@
             .item-info-top {
                 display: flex;
                 align-items: center;
-                margin-bottom: 15px;
+                margin-bottom: 10px;
                 margin-left: 5px;
                 font-size: 14px;
                 font-weight: 600;
@@ -66,17 +68,17 @@
                     padding: 1px 3px;
                     margin: 0 10px;
                 }
-                .descriptioin {
-                    font-size: 13px;
-                    margin-bottom: 15px;
-                    color: whitesmoke;
-                }
             }
             .genere {
-                margin-top: 30px;
+                margin: 10px;
 
                 font-size: 14px;
                 color: lightgray;
+            }
+            .description {
+                font-size: 15px;
+                margin-bottom: 5px;
+                color: whitesmoke;
             }
         }
     }

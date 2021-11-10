@@ -30,7 +30,7 @@ function ListItem({ id, movie }) {
 
                     <div className="item-info">
                         <div className="icons">
-                            <Link to='/waching' className="router-link" style={LinkStyle} movie={movie.trailer} >
+                            <Link to={{pathname: '/waching', state: {movie: trailer, name: movie.name, id: id} }} className="router-link" style={LinkStyle} movie={trailer} >
                                 <PlayArrow className="icon" />
                             </Link>
                             <Add className="icon" />
