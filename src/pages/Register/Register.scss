@@ -146,8 +146,9 @@
                         justify-content: space-around;
                         text-decoration: none;
                         background-color: red;
+
                         padding: 0 10px;
-                        
+
                         .register-btn {
                             border: none;
                             cursor: pointer;
@@ -549,6 +550,79 @@
                                 }
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .register {
+        .register-wrapper {
+            .top {
+                align-items: center;
+                height: 45px;
+                padding: 3.2rem 1rem;
+                .right {
+                    height: inherit;
+                    .logo {
+                        height: 1.5rem;
+                    }
+
+                }
+                .left {
+                    height: inherit;
+                    display: flex;
+                    justify-content: center;
+                    justify-content: space-around;
+                    margin-right: .5rem;
+                    padding-left: 1rem;
+                    .mb-1 {
+                        max-height: 35px;
+
+                        .lan-icon {
+                            color: white;
+                        }
+                        border: solid 1px white;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .select-lang {
+                            color: white;
+                            border: none;
+                            background-color: transparent;
+                        }
+                    }
+                    .router-link {
+                        .login-button {
+                            background-color: #e50914;
+                            border: none;
+                            padding: 0.2rem 0.5rem;
+                            font-size: 0.9rem;
+                            font-weight: 500;
+                            cursor: pointer;
+                            color: white;
+                            border-radius: 3px;
+                        }
+                    }
+                }
+            }
+            .container {
+                .container-wrapper {
+                    margin: 0;
+                    margin-top: 4rem;
+                    max-width: 640px;
+                    font-size: 1.75rem;
+                    text-align: center;
+                    h1 {
+                        font-size: inherit;
+                    }
+                    .h1-title-below {
+                        font-size: inherit;
+                    }
+                    .h2-h2 {
+                        font-size: inherit;
                     }
                 }
             }

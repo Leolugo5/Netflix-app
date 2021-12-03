@@ -36,7 +36,7 @@ const Register = () => {
                         <img className="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-Netflix_2015_logo.svg.png" alt="" />
                     </div>
                     <div className="left">
-                        <div className="lan-wrapper">
+                        <div className="lan-wrapper mb-1">
                             <Language className="lan-icon" />
                             <select name="lang" id="" className="select-lang" >
                                 <option value="spanish"> Español </option>
@@ -86,7 +86,7 @@ const Register = () => {
                         <div className="add-tv-media-container">
                             <div className="add-tv-media-animation">
                                 <img className="add-tv-photo" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="" />
-                                <video className="add-tv-video" autoPlay loop src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v"></video>
+                                <video className="add-tv-video" autoPlay loop muted playsinline src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v"></video>
                             </div>
                         </div>
                     </div>
@@ -130,7 +130,7 @@ const Register = () => {
                             <div className="media-content">
                                 <div className="media-container media-tv-video">
                                     <img className="media-photo" src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png" alt="" />
-                                    <video className="media-video" autoPlay loop src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v"></video>
+                                    <video className="media-video" autoPlay loop muted playsinline src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v"></video>
                                 </div>
                             </div>
                         </div>
